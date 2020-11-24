@@ -15,8 +15,8 @@ body {
 h1,
 h2 {
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 p {
@@ -232,5 +232,53 @@ input[type='checkbox']:checked ~ span:nth-last-child(3) {
 
 input[type='checkbox']:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(1px, 0px);
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    height: 80px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header img {
+    width: 36px;
+    height: 36px;
+  }
+  .menu input,
+  .menu span {
+    display: none;
+  }
+  .menu ul {
+    position: static;
+    background: transparent;
+    height: auto;
+    opacity: 1;
+  }
+  .menu li {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  .menu a {
+    padding: 0;
+    line-height: 1;
+    color: #060a24;
+    pointer-events: auto;
+    display: block;
+  }
+  .menu a:hover:not(.active) {
+    color: #00f3bb;
+  }
+  .menu a.active {
+    color: rgba(6, 10, 36, 0.56);
+  }
+  h1.title {
+    font-size: 64px;
+  }
+  .btn {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */
