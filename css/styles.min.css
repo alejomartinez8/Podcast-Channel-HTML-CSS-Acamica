@@ -24,7 +24,6 @@ p {
   color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
-  margin-top: 0;
 }
 
 .responsive {
@@ -39,6 +38,10 @@ p {
   font-size: 36px;
   letter-spacing: 0;
   line-height: 42px;
+}
+
+.title span {
+  color: blue;
 }
 
 .text-white {
@@ -234,10 +237,10 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(1px, 0px);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
   header {
     height: 80px;
-    padding: 20px;
+    padding: 20px 5vw;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -274,11 +277,82 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
   .menu a.active {
     color: rgba(6, 10, 36, 0.56);
   }
+  #header p {
+    display: block;
+    width: 50vw;
+  }
   h1.title {
     font-size: 64px;
   }
   .btn {
     display: inline-block;
+  }
+  .container {
+    padding: 0 10vw;
+  }
+  .polygon-episodes {
+    clip-path: polygon(0 10vh, 100% 0%, 100% 90vh, 0% 100%);
+    padding: 50px 1rem;
+  }
+  .diagonal-footer {
+    clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0% 100%);
+    padding: 10vh 1rem;
+    text-align: center;
+  }
+  #episodios,
+  #nosotros,
+  #entrevistas,
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #episodios {
+    padding: 20vh 1vh;
+  }
+  #episodios .flex-container div {
+    flex-basis: 50%;
+  }
+  #episodios h2 {
+    flex-basis: 100%;
+  }
+  #episodios div {
+    flex-basis: 50%;
+  }
+  #nosotros {
+    align-items: center;
+    padding: 0px 15vw;
+    margin-top: -10vh;
+    margin-bottom: 5vh;
+  }
+  #nosotros div {
+    flex-basis: 50%;
+  }
+  #nosotros div img {
+    margin-top: 0;
+  }
+  #entrevistas {
+    margin-bottom: 10vh;
+  }
+  #entrevistas h2 {
+    padding: 0 20vh;
+    flex-basis: 100%;
+  }
+  #entrevistas div {
+    flex-basis: 33.33%;
+  }
+  #topicos {
+    margin-bottom: 10vh;
+  }
+  #topicos h2 {
+    padding: 0 20vh;
+  }
+  footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10vw;
+  }
+  footer ul li {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */
