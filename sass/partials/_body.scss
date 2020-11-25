@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
 
 *,
 *:before,
@@ -25,4 +26,8 @@ p {
   color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
+}
+
+footer {
+  padding: 1rem 5rem;
 }

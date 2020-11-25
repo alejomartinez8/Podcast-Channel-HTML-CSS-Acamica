@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
 *,
 *:before,
 *::after {
@@ -24,6 +25,10 @@ p {
   color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
+}
+
+footer {
+  padding: 1rem 5rem;
 }
 
 .responsive {
@@ -59,13 +64,9 @@ p {
   padding: 12px 48px;
 }
 
-#img-phone {
-  margin-top: -10vh;
-}
-
 #episodios {
   position: relative;
-  z-index: -1;
+  padding-bottom: 10vh;
 }
 
 .bg-blue {
@@ -83,9 +84,12 @@ p {
   text-align: center;
 }
 
-.btn:hover {
-  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
-  color: #ffffff;
+#img-phone {
+  margin-top: -10vh;
+}
+
+#nosotros > div {
+  z-index: 1;
 }
 
 .m-0 {
@@ -139,6 +143,19 @@ a.nav-link {
   color: #060a24;
   letter-spacing: 0;
   line-height: 28px;
+}
+
+#topicos p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 2rem;
+  text-align: center;
+  line-height: unset;
+}
+
+#topicos div {
+  padding: 1rem;
 }
 
 .flex-container {
@@ -238,6 +255,9 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
   header {
     height: 80px;
     padding: 20px 5vw;
@@ -249,6 +269,9 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
   header img {
     width: 36px;
     height: 36px;
+  }
+  .title {
+    font-size: 48px;
   }
   .menu input,
   .menu span {
@@ -287,11 +310,15 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
   .btn {
     display: inline-block;
   }
+  .btn:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+    color: #ffffff;
+  }
   .container {
     padding: 0 10vw;
   }
   .polygon-episodes {
-    clip-path: polygon(0 10vh, 100% 0%, 100% 90vh, 0% 100%);
+    clip-path: polygon(0 10vh, 100% 0%, 100% 90%, 0% 100%);
     padding: 50px 1rem;
   }
   .diagonal-footer {
@@ -307,7 +334,7 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
     flex-wrap: wrap;
   }
   #episodios {
-    padding: 20vh 1vh;
+    padding: 15vh 1vh;
   }
   #episodios .flex-container div {
     flex-basis: 50%;
@@ -341,10 +368,13 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
     flex-basis: 33.33%;
   }
   #topicos {
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
   }
   #topicos h2 {
     padding: 0 20vh;
+  }
+  #topicos .flex-container div {
+    width: 20vw;
   }
   footer {
     justify-content: space-between;
