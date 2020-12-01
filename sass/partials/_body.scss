@@ -12,6 +12,7 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   color: #060a24;
   margin: 0;
+  font-size: 14px;
 }
 
 h1,
@@ -22,10 +23,9 @@ h2 {
 }
 
 p {
-  font-size: 14px;
   color: #060a24;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 1.5em;
 }
 
 footer {

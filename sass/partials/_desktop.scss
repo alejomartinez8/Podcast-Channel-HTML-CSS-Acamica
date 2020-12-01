@@ -1,8 +1,7 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 16px;
   }
-
   header {
     height: 80px;
     padding: 20px 5vw;
@@ -114,7 +113,6 @@
     padding: 0px 15vw;
     margin-top: -10vh;
     margin-bottom: 5vh;
-    
 
     div {
       flex-basis: 50%;
@@ -141,11 +139,6 @@
     h2 {
       padding: 0 20vh;
     }
-    .flex-container {
-      div {
-        width: 20vw;
-      }
-    }
   }
 
   footer {
@@ -157,5 +150,11 @@
         padding: 10px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 1.2em;
   }
 }

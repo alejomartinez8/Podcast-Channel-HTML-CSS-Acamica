@@ -124,4 +124,6 @@ a.nav-link {
 
 #topicos div {
   padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 50%;
 }
