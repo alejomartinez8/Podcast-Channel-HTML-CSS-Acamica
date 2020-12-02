@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -53,9 +53,16 @@
 
   #header {
     p {
-      display: block;
       width: 50vw;
     }
+  }
+
+  p.intro-desktop {
+    display: block;
+  }
+
+  p.intro-mobile {
+    display: none;
   }
 
   h1.title {

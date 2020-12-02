@@ -210,15 +210,6 @@ header nav {
   pointer-events: none;
 }
 
-input[type='checkbox'] {
-  display: block;
-  width: 40px;
-  height: 30px;
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-}
-
 .menu span {
   display: block;
   width: 25px;
@@ -229,6 +220,15 @@ input[type='checkbox'] {
   z-index: 1;
   transform-origin: 3px 0px;
   transition: transform 0.5s ease, opacity 0.55s ease;
+}
+
+input[type='checkbox'] {
+  display: block;
+  width: 40px;
+  height: 30px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
 }
 
 .menu span:nth-last-child(2) {
@@ -257,7 +257,11 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(1px, 0px);
 }
 
-@media screen and (min-width: 1024px) {
+p.intro-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -304,8 +308,13 @@ input[type='checkbox']:checked ~ span:nth-last-child(2) {
     color: rgba(6, 10, 36, 0.56);
   }
   #header p {
-    display: block;
     width: 50vw;
+  }
+  p.intro-desktop {
+    display: block;
+  }
+  p.intro-mobile {
+    display: none;
   }
   h1.title {
     font-size: 64px;
