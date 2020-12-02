@@ -42,10 +42,10 @@
       color: #060a24;
       pointer-events: auto;
       display: block;
-      &:hover:not(.active) {
+      &:hover {
         color: #00f3bb;
       }
-      &.active {
+      &:active {
         color: rgba(6, 10, 36, 0.56);
       }
     }

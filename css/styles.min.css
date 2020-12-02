@@ -302,10 +302,10 @@ p.intro-desktop {
     pointer-events: auto;
     display: block;
   }
-  .menu a:hover:not(.active) {
+  .menu a:hover {
     color: #00f3bb;
   }
-  .menu a.active {
+  .menu a:active {
     color: rgba(6, 10, 36, 0.56);
   }
   #header p {
