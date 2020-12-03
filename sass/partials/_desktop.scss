@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
   header {
     height: 80px;
     padding: 20px 5vw;
@@ -16,7 +13,7 @@
   }
 
   .title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .menu {
@@ -44,16 +41,18 @@
       display: block;
       &:hover {
         color: #00f3bb;
+        text-decoration: line-through;
       }
       &:active {
         color: rgba(6, 10, 36, 0.56);
+        text-decoration: line-through;
       }
     }
   }
 
   #header {
     p {
-      width: 50vw;
+      width: 60vw;
     }
   }
 
@@ -66,12 +65,12 @@
   }
 
   h1.title {
-    font-size: 64px;
+    font-size: 4rem;
   }
 
   .btn {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .btn:hover {
@@ -80,7 +79,7 @@
   }
 
   .container {
-    padding: 0 10vw;
+    padding: 5vh 10vw;
   }
 
   .polygon-episodes {
@@ -97,13 +96,14 @@
   #episodios,
   #nosotros,
   #entrevistas,
+  #topicos,
   footer {
     display: flex;
     flex-wrap: wrap;
   }
 
   #episodios {
-    padding: 15vh 1vh;
+    padding: 10vh 5vh 20vh 5vh;
     .flex-container div {
       flex-basis: 50%;
     }
@@ -118,15 +118,15 @@
 
   #nosotros {
     align-items: center;
-    padding: 0px 15vw;
-    margin-top: -10vh;
+    padding: 0px 12vw;
+    margin-top: -15vh;
     margin-bottom: 5vh;
 
     div {
       flex-basis: 50%;
-
       img {
         margin-top: 0;
+        padding: 0 3rem;
       }
     }
   }
@@ -143,12 +143,13 @@
   }
 
   #topicos {
-    margin-bottom: 1vh;
-    div.flex-container {
-      padding: 0 10vh;
-    }
+    margin-bottom: 2rem;
+    padding: 0 15vh;
     h2 {
-      padding: 0 20vh;
+      flex-basis: 100%;
+    }
+    div {
+      flex-basis: calc(100% / 4);
     }
   }
 

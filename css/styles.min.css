@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300&display=swap");
 *,
 *:before,
 *::after {
   box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
 }
 
 body {
@@ -11,14 +15,14 @@ body {
   font-weight: 300;
   color: #060a24;
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 h1,
 h2 {
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 
 p {
@@ -28,7 +32,7 @@ p {
 }
 
 footer {
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
 }
 
 .responsive {
@@ -40,9 +44,9 @@ footer {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 2.25rem;
   letter-spacing: 0;
-  line-height: 42px;
+  line-height: 1em;
 }
 
 .title span {
@@ -57,11 +61,9 @@ footer {
   display: block;
   background-color: #00f3bb;
   color: #060a24;
-  font-size: 16px;
   text-align: center;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid transparent;
   padding: 12px 48px;
 }
 
@@ -92,22 +94,6 @@ footer {
 #nosotros {
   z-index: 1;
   position: relative;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.m-1 {
-  margin: 1rem;
-}
-
-.mt-3 {
-  margin-top: 3rem;
-}
-
-.mb-3 {
-  margin-bottom: 3rem;
 }
 
 /* Padding */
@@ -141,7 +127,6 @@ li.nav-item {
 
 a.nav-link {
   text-decoration: none;
-  font-size: 16px;
   color: #060a24;
   letter-spacing: 0;
   line-height: 28px;
@@ -150,7 +135,7 @@ a.nav-link {
 #topicos p {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 0 2rem;
   text-align: center;
   line-height: unset;
@@ -159,7 +144,6 @@ a.nav-link {
 #topicos div {
   padding: 1rem;
   flex-grow: 1;
-  flex-basis: 50%;
 }
 
 .flex-container {
@@ -203,7 +187,6 @@ header nav {
 .menu a {
   display: block;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 16px;
   color: #ffffff;
   letter-spacing: 0;
   line-height: 28px;
@@ -263,9 +246,6 @@ p.intro-desktop {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
   header {
     height: 80px;
     padding: 20px 5vw;
@@ -279,7 +259,7 @@ p.intro-desktop {
     height: 36px;
   }
   .title {
-    font-size: 48px;
+    font-size: 3rem;
   }
   .menu input,
   .menu span {
@@ -304,12 +284,14 @@ p.intro-desktop {
   }
   .menu a:hover {
     color: #00f3bb;
+    text-decoration: line-through;
   }
   .menu a:active {
     color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
   }
   #header p {
-    width: 50vw;
+    width: 60vw;
   }
   p.intro-desktop {
     display: block;
@@ -318,18 +300,18 @@ p.intro-desktop {
     display: none;
   }
   h1.title {
-    font-size: 64px;
+    font-size: 4rem;
   }
   .btn {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .btn:hover {
     background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
     color: #ffffff;
   }
   .container {
-    padding: 0 10vw;
+    padding: 5vh 10vw;
   }
   .polygon-episodes {
     clip-path: polygon(0 10vh, 100% 0%, 100% 90%, 0% 100%);
@@ -343,12 +325,13 @@ p.intro-desktop {
   #episodios,
   #nosotros,
   #entrevistas,
+  #topicos,
   footer {
     display: flex;
     flex-wrap: wrap;
   }
   #episodios {
-    padding: 15vh 1vh;
+    padding: 10vh 5vh 20vh 5vh;
   }
   #episodios .flex-container div {
     flex-basis: 50%;
@@ -362,8 +345,8 @@ p.intro-desktop {
   }
   #nosotros {
     align-items: center;
-    padding: 0px 15vw;
-    margin-top: -10vh;
+    padding: 0px 12vw;
+    margin-top: -15vh;
     margin-bottom: 5vh;
   }
   #nosotros div {
@@ -371,6 +354,7 @@ p.intro-desktop {
   }
   #nosotros div img {
     margin-top: 0;
+    padding: 0 3rem;
   }
   #entrevistas {
     margin-bottom: 10vh;
@@ -383,13 +367,14 @@ p.intro-desktop {
     flex-basis: 33.33%;
   }
   #topicos {
-    margin-bottom: 1vh;
-  }
-  #topicos div.flex-container {
-    padding: 0 10vh;
+    margin-bottom: 2rem;
+    padding: 0 15vh;
   }
   #topicos h2 {
-    padding: 0 20vh;
+    flex-basis: 100%;
+  }
+  #topicos div {
+    flex-basis: calc(100% / 4);
   }
   footer {
     justify-content: space-between;
